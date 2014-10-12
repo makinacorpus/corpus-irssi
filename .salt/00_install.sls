@@ -32,7 +32,7 @@ install-pkgs:
             -----END PGP PUBLIC KEY BLOCK-----
             EOF;
             if [ ! -e /etc/apt/sources.list.d/bitlbee.list ];then
-              echo 'deb http://code.bitlbee.org/debian/devel/trusty/amd64 ./'>/etc/apt/sources.list.d/bitlbee.list
+              echo 'deb http://code.bitlbee.org/debian/devel/{{dist}}/amd64 ./'>/etc/apt/sources.list.d/bitlbee.list
             fi
   pkg.latest:
     - require:
